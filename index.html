@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Impact Simulation</title>
+        <link rel="stylesheet" href="./main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Impact Simulation</h1>
+        <main class="main">
+            <a class="file-link" href="impact-examples.pdf" target="_blank"
+                >Impact Examples</a
+            >
+            <h2>Enter Impactor Parameters</h2>
+            <form action="" name="impactor">
+                <div class="input-params">
+                    <label for="diameter"><b>Impactor Diameter</b></label>
+                    <input type="text" name="diameter" /> m
+                </div>
+
+                <div class="input-params">
+                    <label for="density"
+                        ><b>Impactor Density</b> (in kg/m^3)</label
+                    >
+                    <input type="text" name="density" /><br />
+                    or choose from the most common impactor's density options
+                    <select name="density_list" id="density-list">
+                        <option value="1000">1000 kg/m^3 for ice</option>
+                        <option value="3000">3000 kg/m^3 for dense rock</option>
+                        <option value="8000">8000 kg/m^3 for iron</option>
+                    </select>
+                </div>
+
+                <div class="input-params">
+                    <label for="impact_velocity"><b>Impact Velocity</b></label>
+                    <input type="text" name="impact_velocity" /> km/s
+                    <p>
+                        Please enter the velocity of the impactor before it
+                        enters the atmosphere. The minimum impact velocity on
+                        Earth is 11 km/s. Typical impact velocities are 17 km/s
+                        for asteroids and 51 km/s for comets. The maximum Earth
+                        impact velocity for objects orbiting the sun is 72 km/s.
+                    </p>
+                </div>
+
+                <div class="input-params">
+                    <label for="impact_angle"
+                        ><b>Impact Angle</b> (in degrees)</label
+                    >
+                    <input type="text" name="impact_angle" />
+                    <p>
+                        Please enter the impact angle of the impactor. We are
+                        considering the surface of the Earth is flat. This angle
+                        can be from 0 to 90 degrees. The most common enter angle
+                        of impact is 45 degrees.
+                    </p>
+                </div>
+
+                <div class="button-wrap">
+                    <button class="submit-btn" type="submit">
+                        Simulate Impact Energy
+                    </button>
+                    <button class="reset-btn" type="reset">Reset Form</button>
+                </div>
+            </form>
+        </main>
+
+        <script src="./main.js"></script>
+    </body>
+</html>

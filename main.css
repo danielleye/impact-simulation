@@ -1,0 +1,64 @@
+body {
+    background-color: #e2d3c4;
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.file-link {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.input-params {
+    font-size: 1.3em;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+
+.input-params p {
+    line-height: 1.3em;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrap button {
+    width: 300px;
+    height: 40px;
+    margin-right: 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    background-color: #4267b2;
+}
+
+.reset-btn {
+    background-color: #f14444;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.result-text {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
